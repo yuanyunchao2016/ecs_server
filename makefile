@@ -1,10 +1,10 @@
 test:
-    python manager.py runserver
+	python manage.py runserver
 
 init:
-    python manage.py makemigratons
-    python manage.py migrate
-    python manage.py createsuperuser
+	python manage.py makemigrations
+	python manage.py migrate
+	python manage.py createsuperuser
 
 
 
