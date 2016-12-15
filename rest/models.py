@@ -10,6 +10,6 @@ class User(models.Model):
 
 class log(models.Model):
     userId = models.IntegerField(db_index=True);
-    time = models.datetime(auto_now_add= True,db_index=True);
+    time = models.DateTimeField(auto_now_add=True,db_index = True);
     context = models.CharField(max_length=1000);
 
